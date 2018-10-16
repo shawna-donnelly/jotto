@@ -7,8 +7,7 @@ import checkPropTypes from 'check-prop-types';
  * @returns {ShallowWrapper}
  */
 export const findByTestAttr = (wrapper, val) => {
-  wrapper.find(`[data-test='${val}']`);
-  return wrapper;
+  return wrapper.find(`[data-test='${val}']`);
 }
 
 export const checkProps = (component, conformingProps) => {
