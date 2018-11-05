@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class Input extends Component{
-
-    
-
     render() {
       const contents = this.props.success
       ? null 
@@ -16,7 +13,9 @@ class Input extends Component{
       );
 
     return(
-      {contents}
+      <div data-test="component-input">
+        {contents}
+      </div>
     );
   }
 }
